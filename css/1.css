@@ -19,7 +19,7 @@ body {
     }
     
     .footer{
-        padding-top: 20px;
+        /* padding-top: 0px; */
         padding-bottom: 20px;
         background-color: #f7f7f7;
     }
@@ -27,7 +27,9 @@ body {
     .wrap {
         width: 100%;
         max-width: 1200px;
-        margin: 82px 362px;
+        /* margin: 82px 362px; */
+        margin: 0 auto;
+
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box;
@@ -44,8 +46,8 @@ body {
     
     /* надо стилизовать список, чтобы между ними было какое-то расстояние */
     .nav>li {
-        margin-left: 40px;
-        padding-top: 9px;
+        margin-left: 40.5px;
+        padding-top: 8px;
     }
     
     .nav>li>a {
@@ -63,7 +65,7 @@ body {
         padding: 3px 10px;
         color: #ffffff;
         border: none;
-        margin-top: 3px;
+        margin-top: 4px;
         margin-right: -31px;
         font-weight: 600;
         width: 100px;
@@ -100,7 +102,6 @@ body {
         font-size: 24px;
         text-align: center;
         color: #202020;
-        margin-top: -1px;
     }
     
     /* We're an independent development agency. */
@@ -109,8 +110,9 @@ body {
         font-size: 58px;
         color: #202020;
         font-weight: 700;
-        margin-bottom: -13.5px;
-        margin-left: -2px;
+        margin-bottom: -12px;
+        margin-top: 82px;
+        margin-left: 10px;
     }
     
     /* We understand */
@@ -121,7 +123,7 @@ body {
         text-align: left;
         color: #4F4F4F;
         font-weight: 400;
-        margin-left: -2px;
+        margin-left: 10px;
         max-width: 750px;
         line-height: 53.8px;
 
@@ -145,10 +147,10 @@ body {
     
         width: 235px;
         height: 60px;
-        margin-top: 1px;
-        margin-left: -3px;
+        margin-top: 2px;
+        margin-left: 9px;
 
-        margin-bottom: 31px;
+        margin-bottom: 109px;
     }
 
     .button-text{
@@ -164,6 +166,7 @@ body {
     
     .page-top {
         border-top: 1px solid #C2C2C2;
+        margin-bottom: 107px;
     
         /* OUR SERVICES */
     
@@ -184,19 +187,20 @@ body {
         position: absolute;
         top: -28px;
         letter-spacing: 1.4px;
-        margin-left: -18px;
+        margin-left: -6px;
         font-size: 14px;
         line-height: 16px;
         font-weight: 300;
         background-color: #ffffff;
         padding: 5px 15px;
         color: #C2C2C2;
-    }
+       }
     
     .services {
         display: grid;
-        grid-template: repeat(2, 1fr) / 50% 50%;
-        grid-row-gap: 25px;
+        grid-template: 190px 185px / 46.6% 57.6%;
+        /* grid-row-gap: px; */
+        grid-column-gap: 128px;
         /* а можно было через fraction */
         /* grid-template: 1fr 1fr / 1fr 1fr; */
     
@@ -210,21 +214,22 @@ body {
     }
     
     .services_img{
-        flex-basis: 95px;
+        flex-basis: 120px;
         /* margin-top: 15px; */
         text-align: center;
-        margin-top: -33px;
+        margin-top: 61px;
+        height: 61px;
     }
     
     .services_text{
-        flex-basis: calc(80% - 95px);
+        flex-basis: calc(80% - 120px);
     }
     
     .services h3 {
         font-size: 28px;
         font-weight: 400;
-        margin-left: 37px;
-        margin-top: -33px;
+        margin-left: 24px;
+        margin-top: 70px;
         /* margin-bottom: 0px; */
     }
     
@@ -233,28 +238,31 @@ body {
         font-weight: 400;
         font-size: 14px;
         color: #b2b2b2;
-        line-height: 28px;
-        margin-top: -10px;
-        margin-left: 37px;
-        max-width: 288px;
-        margin-top: -13px;
-        margin-bottom: 20px
+        line-height: 1.7;
+        /* margin-top: 100px; */
+        margin-left: 25px;
+        max-width: 287px;
+        margin-top: -15px;
+        margin-bottom: 10px;
+        /* letter-spacing: 0.5px; */
     }
     
    .clients {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(4, 25.4%);
+    grid-template: 60px 50px / repeat(4, 25.7%);
     text-align: center;
     grid-row-gap: 44px;
-    margin-top: -52px;
-    margin-left: -13px;
+    margin-top: 29px;
+    margin-left: 0px;
 }
     
     .team{
         display: grid;
-        grid-template: repeat(3, 1fr) / repeat(3, 34.6%);
+        grid-template: repeat(3, 150px) / repeat(3, 34.9%);
         /* чтобы сделать отступы между ячейками */
-        grid-row-gap: 52px;
+        grid-row-gap: 10px;
+        margin-top: 41px;
+        margin-left: 10px;
         /* grid-column-gap: 40px; */
     }
     
@@ -263,20 +271,21 @@ body {
         justify-content: flex-start;
         /* чтобы картинки стали по центру */
         align-items: center;
-        margin-left: -2px;
+        margin-left: 0px;
     }
     .team-item img{
         margin-right: 33px;
     }
     .team-item>div{
-        flex-basis: calc(100% - 100px);
+        flex-basis: calc(80% - 33px);
     }
     
     .team-item h3 {
         font-size: 28px;
         color: #202020;
-        margin-bottom: 0;
-        margin-top: 15px;
+        /* margin-bottom: 0; */
+        margin-top: 6px;
+        margin-left: 1px;
         margin-bottom: 11px;
     }
     .team-item p {
@@ -288,21 +297,23 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 15.6px;
-        margin-left: 376.5px
+        margin-top: -31px;
+        /* margin-bottom: 40px; */
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .social{
         list-style-type: none;
-        padding-left: 0;
+        padding-left: 0px;
         display: flex;
+        margin-left: 100px;
     }
     
     /* для отступов между */
     .social>li{
-        margin-left: 27px;
-        margin-top: -5px;
-        padding-left: 17px;
+        margin-left: 38.5px;
+        /* margin-top: -4px; */
     }
     
     .social>li>a{
@@ -310,3 +321,11 @@ body {
         color: #b2b2b2;
         font-size: 24px;
     }
+
+    .wrap.box-footer {
+        padding-left: 42px;
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    
